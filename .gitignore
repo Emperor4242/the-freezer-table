@@ -1,0 +1,14 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Local settings, credentials and generated files
+.env
+.env.*
+!.env.example
+node_modules/
+.wrangler/
+*.log
