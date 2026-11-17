@@ -20,6 +20,7 @@
     .idea-card{padding:0;overflow:hidden}.idea-art{position:relative;aspect-ratio:3/2;background:#ece9dd;overflow:hidden}.idea-art img{display:block;width:100%;height:100%;object-fit:cover}.photo-caption{position:absolute;bottom:10px;left:12px;padding:5px 8px;border-radius:6px;background:#fffdf9ed;color:var(--green);font-size:10px;font-weight:600;line-height:1.3}.idea-content{padding:24px}
     @media(max-width:600px){.idea-content{padding:22px}}
     @media print{.idea-grid{display:block}.idea-card{break-inside:avoid;margin-bottom:15px}.idea-card h2{font-size:16pt!important}.idea-topline{margin-bottom:8px}.idea-details dd,.idea-card p{font-size:10pt}.idea-art{display:none}.idea-content{padding:12px 0}}
+    .recipe-photo{position:relative;width:100%;height:100%;min-height:inherit}.recipe-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   </style>
 </head>
 <body>
@@ -100,75 +101,648 @@ const recipes=[
  freezer:'Cool the cooked chicken filling, assemble the pies with raw pastry lids and freeze BEFORE baking. Cover carefully so it does not squash the pastry. For your deep 1-litre dishes, expect cooking times at the long end.',
  tips:'Crimping means pressing the pastry against the dish rim with a fork, not making an airtight seal. A small slit in the lid lets steam escape. Use a wider, shallower dish if possible for faster heating.'
 }
+,
+{
+  "id": "white-bean-barley-stew",
+  "title": "White bean, barley and root vegetable stew",
+  "short": "A hearty one-pot stew of white beans, pearl barley, sweet root vegetables and thyme.",
+  "category": "Vegetarian",
+  "icon": "♧",
+  "theme": "#dce6d7",
+  "accent": "#87966a",
+  "portions": 8,
+  "portionUnit": "portions",
+  "prep": "25 min",
+  "cook": "55–75 min",
+  "tag": "Beans & barley",
+  "ingredients": [
+    {
+      "heading": "Stew",
+      "items": [
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "name": "olive oil",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "name": "brown onions",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 400,
+          "unit": "g",
+          "name": "trimmed leeks",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 500,
+          "unit": "g",
+          "name": "carrots",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 400,
+          "unit": "g",
+          "name": "parsnips",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "name": "garlic cloves",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 250,
+          "unit": "g",
+          "name": "dry pearl barley",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 4,
+          "unit": "×",
+          "name": "400 g tins cannellini beans",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 1800,
+          "unit": "ml",
+          "name": "vegetable stock",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "tsp",
+          "name": "dried thyme",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "name": "bay leaves",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "name": "lemons",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 20,
+          "unit": "g",
+          "name": "flat-leaf parsley",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "name": "salt and black pepper",
+          "category": "Herbs & seasoning",
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prepare the vegetables and beans",
+      "text": "Use an 8-litre stockpot, or split the batch between two pans. Dice the onions; wash and slice the trimmed leeks. Scrub or peel carrots and parsnips and cut into 1.5 cm pieces. Crush the garlic. Rinse the barley. Drain and rinse the beans; four 400 g tins give roughly 960 g drained beans."
+    },
+    {
+      "title": "Soften the base",
+      "text": "Heat the oil over medium-low heat. Cook onions and leeks for 8–10 minutes, stirring. Add carrots and parsnips for 5 minutes, then garlic and thyme for 1 minute."
+    },
+    {
+      "title": "Simmer the barley",
+      "text": "Add the barley, stock and bay leaves. Bring to a boil, then partially cover and simmer gently for 30–40 minutes, stirring occasionally. Follow the barley packet if it needs longer. Keep 300–600 ml hot water available and add as needed to prevent sticking."
+    },
+    {
+      "title": "Add the beans",
+      "text": "Stir in the drained beans and simmer for another 10–15 minutes until the barley and root vegetables are tender. Mash a ladleful of beans and vegetables against the pan to thicken the broth if desired."
+    },
+    {
+      "title": "Finish and portion",
+      "text": "Remove the bay leaves. Add finely grated lemon zest and 1 tbsp lemon juice, then adjust to taste with more juice, salt and pepper. Stir in chopped parsley. Add water for a spoonable stew rather than a solid mixture. Divide into eight generous bowls or storage portions."
+    }
+  ],
+  "modes": [
+    {
+      "id": "fresh",
+      "label": "Fresh",
+      "temperature": "Hob · gentle simmer",
+      "time": "Serve after the preparation steps",
+      "steps": [
+        {
+          "title": "Serve the finished stew",
+          "text": "The preparation steps cook the stew completely. Taste and adjust seasoning, then divide into eight portions. Cool any portions for storage promptly."
+        }
+      ]
+    },
+    {
+      "id": "frozen",
+      "label": "Frozen batch",
+      "temperature": "Defrost in fridge, then reheat on hob",
+      "time": "Allow overnight or longer to thaw",
+      "steps": [
+        {
+          "title": "Thaw completely",
+          "text": "Defrost a single portion in a covered container in the fridge. Larger containers may need longer than overnight. Do not thaw on the worktop."
+        },
+        {
+          "title": "Reheat",
+          "text": "Once fully thawed, follow the Defrosted instructions. Reheat only the amount you will eat; do not refreeze reheated leftovers."
+        }
+      ]
+    },
+    {
+      "id": "thawed",
+      "label": "Defrosted",
+      "temperature": "Hob · medium-low heat",
+      "time": "About 10–15 min per portion; longer for larger amounts",
+      "steps": [
+        {
+          "title": "Loosen and stir",
+          "text": "Put a thawed portion in a saucepan with a splash of water. Heat gently, stirring regularly and adding more water if it catches or looks too thick."
+        },
+        {
+          "title": "Check the centre",
+          "text": "Bring to a gentle simmer and heat until steaming hot throughout, including any chicken pieces. Check 75°C for at least 30 seconds at the coldest point. Eat within 24 hours of defrosting and reheat only once."
+        }
+      ]
+    }
+  ],
+  "freezer": "Divide into shallow portions and cool promptly; refrigerate or freeze within 1–2 hours. Keep chilled leftovers for no more than 48 hours. Defrost completely in the fridge and use within 24 hours of thawing. Reheat only once until steaming hot throughout; a probe should read 75°C for at least 30 seconds at the coldest point. The barley absorbs liquid during storage, so loosen with water when reheating. Aim to use frozen portions within 3 months for best quality.",
+  "tips": "The beans, barley and vegetables supply fibre; no fibre-per-portion calculation has been made. Contains barley (gluten); check stock ingredients. Use vegetable stock suitable for your diet. New complete recipe, not kitchen-tested.",
+  "photo": "images/ideas/white-bean-barley-stew.webp"
+},
+{
+  "id": "lemon-chicken-butter-bean-stew",
+  "title": "Lemon chicken, butter bean and leek stew",
+  "short": "Tender chicken thighs and creamy butter beans in a bright lemon, leek and oregano broth.",
+  "category": "One-pot",
+  "icon": "◉",
+  "theme": "#e2e7cc",
+  "accent": "#98a063",
+  "portions": 8,
+  "portionUnit": "portions",
+  "prep": "25 min",
+  "cook": "45–55 min",
+  "tag": "Lemon & oregano",
+  "ingredients": [
+    {
+      "heading": "Stew",
+      "items": [
+        {
+          "qty": 1200,
+          "unit": "g",
+          "name": "boneless skinless chicken thighs",
+          "category": "Meat",
+          "optional": false
+        },
+        {
+          "qty": 4,
+          "unit": "×",
+          "name": "400 g tins butter beans",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 500,
+          "unit": "g",
+          "name": "trimmed leeks",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 400,
+          "unit": "g",
+          "name": "carrots",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 1,
+          "unit": "",
+          "name": "brown onions",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 4,
+          "unit": "",
+          "name": "garlic cloves",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "tbsp",
+          "name": "olive oil",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 800,
+          "unit": "ml",
+          "name": "vegetable stock",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "tsp",
+          "name": "dried oregano",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "name": "bay leaves",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "",
+          "name": "lemons",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 20,
+          "unit": "g",
+          "name": "flat-leaf parsley",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "name": "salt and black pepper",
+          "category": "Herbs & seasoning",
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prepare",
+      "text": "Use a large heavy pot of at least 6 litres. Wash and slice the leeks, dice the onion, cut carrots into thin half-moons and crush the garlic. Drain and rinse the beans (about 960 g drained). Cut the chicken into roughly 3 cm pieces with a separate board and knife; wash hands and utensils after handling raw chicken."
+    },
+    {
+      "title": "Brown the chicken",
+      "text": "Heat 1 tbsp oil over medium-high heat. Brown the chicken in two or three batches for 3–4 minutes per batch, then transfer to a bowl. It will still be raw inside at this stage."
+    },
+    {
+      "title": "Soften the vegetables",
+      "text": "Reduce to medium-low. Add the remaining oil, onion, leeks and carrots. Cook for 8–10 minutes, stirring and adding a splash of water if the base catches. Add garlic and oregano for 1 minute."
+    },
+    {
+      "title": "Simmer until cooked",
+      "text": "Return the chicken and its juices. Add stock, bay leaves and finely grated zest from one lemon. Bring to a simmer, partly cover and cook gently for about 20 minutes, stirring occasionally. Check the largest chicken pieces reach 75°C for at least 30 seconds; continue cooking if necessary."
+    },
+    {
+      "title": "Add butter beans",
+      "text": "Add the beans and simmer gently for 8–10 minutes until heated through and the carrots are tender. Crush a few beans into the broth for a naturally creamy texture. Add a little water if too thick."
+    },
+    {
+      "title": "Finish with lemon",
+      "text": "Remove the bay leaves. Stir in 2 tbsp lemon juice and chopped parsley, then season. Taste before adding more juice. Reserve the second lemon for wedges or to brighten reheated portions. Divide into eight portions; serve alone or with bread if wanted (bread is not included in the shopping list)."
+    }
+  ],
+  "modes": [
+    {
+      "id": "fresh",
+      "label": "Fresh",
+      "temperature": "Hob · gentle simmer",
+      "time": "Serve after the preparation steps",
+      "steps": [
+        {
+          "title": "Serve the finished stew",
+          "text": "The preparation steps cook the stew completely. Taste and adjust seasoning, then divide into eight portions. Cool any portions for storage promptly."
+        }
+      ]
+    },
+    {
+      "id": "frozen",
+      "label": "Frozen batch",
+      "temperature": "Defrost in fridge, then reheat on hob",
+      "time": "Allow overnight or longer to thaw",
+      "steps": [
+        {
+          "title": "Thaw completely",
+          "text": "Defrost a single portion in a covered container in the fridge. Larger containers may need longer than overnight. Do not thaw on the worktop."
+        },
+        {
+          "title": "Reheat",
+          "text": "Once fully thawed, follow the Defrosted instructions. Reheat only the amount you will eat; do not refreeze reheated leftovers."
+        }
+      ]
+    },
+    {
+      "id": "thawed",
+      "label": "Defrosted",
+      "temperature": "Hob · medium-low heat",
+      "time": "About 10–15 min per portion; longer for larger amounts",
+      "steps": [
+        {
+          "title": "Loosen and stir",
+          "text": "Put a thawed portion in a saucepan with a splash of water. Heat gently, stirring regularly and adding more water if it catches or looks too thick."
+        },
+        {
+          "title": "Check the centre",
+          "text": "Bring to a gentle simmer and heat until steaming hot throughout, including any chicken pieces. Check 75°C for at least 30 seconds at the coldest point. Eat within 24 hours of defrosting and reheat only once."
+        }
+      ]
+    }
+  ],
+  "freezer": "Divide into shallow portions and cool promptly; refrigerate or freeze within 1–2 hours. Keep chilled leftovers for no more than 48 hours. Defrost completely in the fridge and use within 24 hours of thawing. Reheat only once until steaming hot throughout; a probe should read 75°C for at least 30 seconds at the coldest point. Freeze the fully cooked stew in individual containers. Aim to use within 3 months for best quality; finish with fresh lemon after reheating if desired.",
+  "tips": "Butter beans add fibre and thicken the broth without cream. This is a complete main dish; choose wholegrain bread if adding a side. Check stock ingredients for allergens. New complete recipe, not kitchen-tested.",
+  "photo": "images/ideas/lemon-chicken-butter-bean-stew.webp"
+},
+{
+  "id": "broccoli-white-bean-macaroni",
+  "title": "Broccoli, pea and white bean macaroni cheese",
+  "short": "Wholewheat macaroni, broccoli, peas and white beans in a generous Cheddar and mustard sauce.",
+  "category": "Vegetarian",
+  "icon": "◒",
+  "theme": "#dde5d2",
+  "accent": "#8c9b65",
+  "portions": 8,
+  "portionUnit": "portions",
+  "prep": "30 min",
+  "cook": "25–35 min bake",
+  "tag": "Vegetable-packed bake",
+  "ingredients": [
+    {
+      "heading": "Pasta and vegetables",
+      "items": [
+        {
+          "qty": 500,
+          "unit": "g",
+          "name": "dry wholewheat macaroni",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 600,
+          "unit": "g",
+          "name": "broccoli",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 300,
+          "unit": "g",
+          "name": "frozen peas",
+          "category": "Vegetables & fruit",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "×",
+          "name": "400 g tins cannellini beans",
+          "category": "Tins & pantry",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "heading": "Sauce and topping",
+      "items": [
+        {
+          "qty": 60,
+          "unit": "g",
+          "name": "butter",
+          "category": "Dairy & eggs",
+          "optional": false
+        },
+        {
+          "qty": 60,
+          "unit": "g",
+          "name": "plain flour",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 1000,
+          "unit": "ml",
+          "name": "milk",
+          "category": "Dairy & eggs",
+          "optional": false
+        },
+        {
+          "qty": 300,
+          "unit": "ml",
+          "name": "vegetable stock",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 300,
+          "unit": "g",
+          "name": "mature Cheddar",
+          "category": "Dairy & eggs",
+          "optional": false
+        },
+        {
+          "qty": 2,
+          "unit": "tsp",
+          "name": "Dijon mustard",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": 60,
+          "unit": "g",
+          "name": "wholemeal breadcrumbs",
+          "category": "Tins & pantry",
+          "optional": false
+        },
+        {
+          "qty": 1,
+          "unit": "tbsp",
+          "name": "olive oil",
+          "category": "Herbs & seasoning",
+          "optional": false
+        },
+        {
+          "qty": null,
+          "unit": "",
+          "name": "salt and black pepper",
+          "category": "Herbs & seasoning",
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prepare the dishes",
+      "text": "If baking now, heat the oven to 180°C fan. Use two shallow 2.5-litre oven dishes or several smaller dishes with at least 5 litres total capacity, leaving headroom. Cut broccoli into small florets and dice the tender stalk. Drain and rinse the beans (about 480 g drained). Grate the cheese."
+    },
+    {
+      "title": "Cook pasta and vegetables",
+      "text": "Cook the macaroni in a large pan of boiling water for 2 minutes less than the packet time. Add broccoli for the final 3 minutes and peas for the final minute. If the pasta cooks too quickly, blanch the vegetables in a second pan. Drain well; the pasta should still be slightly firm."
+    },
+    {
+      "title": "Make the sauce",
+      "text": "Melt the butter in a large saucepan over medium-low heat. Stir in flour and cook for 2 minutes. Gradually whisk in milk, followed by stock, keeping the sauce smooth. Bring to a gentle simmer and cook for 5–7 minutes, stirring, until thickened but still pourable."
+    },
+    {
+      "title": "Add cheese and beans",
+      "text": "Take the pan off the heat. Stir in 200 g of the Cheddar and the mustard, then add the drained beans. Season lightly, as cheese and stock may already be salty. The sauce should generously coat the pasta; loosen with a splash of water if necessary."
+    },
+    {
+      "title": "Assemble",
+      "text": "Mix pasta, vegetables and sauce, then divide between the dishes. For immediate baking, top with the remaining 100 g cheese and the breadcrumbs mixed with olive oil. Follow the Fresh tab to bake. For freezing, cool the assembled mixture promptly without baking; pack the cheese and dry breadcrumbs separately, and add oil and topping when ready to bake."
+    }
+  ],
+  "modes": [
+    {
+      "id": "fresh",
+      "label": "Fresh",
+      "temperature": "180°C fan",
+      "time": "25–35 min",
+      "steps": [
+        {
+          "title": "Bake once",
+          "text": "Bake the freshly assembled, warm pasta dishes for 25–35 minutes until bubbling and golden. Check the centre is steaming hot; if the topping browns too quickly, cover loosely with foil. Allow longer for a chilled or deeper dish."
+        },
+        {
+          "title": "Serve",
+          "text": "Rest for 5 minutes, then divide into eight portions. The preparation steps do not include this bake; do not bake twice."
+        }
+      ]
+    },
+    {
+      "id": "frozen",
+      "label": "Frozen batch",
+      "temperature": "Defrost in fridge, then bake",
+      "time": "Allow 24–36 hours for a larger dish",
+      "steps": [
+        {
+          "title": "Thaw first",
+          "text": "Defrost the covered, assembled pasta completely in the fridge. Small portions may thaw overnight; larger dishes can take 24–36 hours or longer. This recipe does not rely on putting frozen cookware into a hot oven."
+        },
+        {
+          "title": "Bake after thawing",
+          "text": "Once fully thawed, add the reserved cheese and breadcrumbs mixed with oil, then follow the Defrosted tab. Use within 24 hours of complete thawing."
+        }
+      ]
+    },
+    {
+      "id": "thawed",
+      "label": "Defrosted",
+      "temperature": "180°C fan",
+      "time": "35–50 min for shallow dishes",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Use oven-safe cookware according to its instructions. If the pasta has absorbed the sauce, gently work a small splash of water into the edges. Add the reserved topping if the pasta was frozen before baking."
+        },
+        {
+          "title": "Heat through",
+          "text": "Cover loosely with foil and bake for about 25–35 minutes. Uncover for another 10–15 minutes to brown. Check the centre is steaming hot and reaches 75°C for at least 30 seconds; allow longer for deeper dishes. Reheat only once."
+        }
+      ]
+    }
+  ],
+  "freezer": "For best texture, freeze assembled portions before the final bake, keeping the cheese and dry breadcrumbs separately wrapped; label them with the pasta. Cool quickly in shallow portions and refrigerate or freeze within 1–2 hours. Aim to use within 2–3 months for quality. Defrost fully in the fridge, use within 24 hours, then bake as directed. Already-baked leftovers can also be frozen promptly and reheated once; do not add another full topping.",
+  "tips": "Wholewheat pasta, white beans, broccoli and peas provide fibre. Choose vegetarian Cheddar if needed; contains wheat/gluten, milk and mustard. Keep the sauce loose because pasta absorbs it during storage. New complete recipe, not kitchen-tested.",
+  "photo": "images/ideas/broccoli-white-bean-macaroni.webp"
+}
 ];
 // Concepts only: these are intentionally separate from the complete recipes and shopping list.
 const recipeIdeas=[
   {
-    id:'butter-bean-squash-gratin',title:'Butter bean, squash and kale gratin',kind:'Vegetarian',
-    concept:'A creamy butter bean and roasted squash bake with kale, mustard and a crisp wholemeal breadcrumb topping.',
-    fibre:'Butter beans, squash, kale and wholemeal breadcrumbs.',
-    freezerPlan:'Try freezing the bean and vegetable base in small dishes, adding the breadcrumb topping when baking.'
+    "id": "butter-bean-squash-gratin",
+    "title": "Butter bean, squash and kale gratin",
+    "kind": "Vegetarian",
+    "concept": "A creamy butter bean and roasted squash bake with kale, mustard and a crisp wholemeal breadcrumb topping.",
+    "fibre": "Butter beans, squash, kale and wholemeal breadcrumbs.",
+    "freezerPlan": "Try freezing the bean and vegetable base in small dishes, adding the breadcrumb topping when baking.",
+    "number": 1
   },
   {
-    id:'lentil-mushroom-moussaka',title:'Lentil, mushroom and aubergine moussaka',kind:'Vegetarian',
-    concept:'A lentil and mushroom version of the moussaka idea, layered with aubergine, potato and a light béchamel topping.',
-    fibre:'Green or brown lentils, aubergine with its skin on and mushrooms.',
-    freezerPlan:'Develop a firm filling for individual oven dishes; test how the aubergine and sauce hold up after thawing.'
+    "id": "lentil-mushroom-moussaka",
+    "title": "Lentil, mushroom and aubergine moussaka",
+    "kind": "Vegetarian",
+    "concept": "A lentil and mushroom version of the moussaka idea, layered with aubergine, potato and a light béchamel topping.",
+    "fibre": "Green or brown lentils, aubergine with its skin on and mushrooms.",
+    "freezerPlan": "Develop a firm filling for individual oven dishes; test how the aubergine and sauce hold up after thawing.",
+    "number": 2
   },
   {
-    id:'white-bean-barley-stew',title:'White bean, barley and root vegetable stew',kind:'Vegetarian',
-    concept:'A thick, herby stew of white beans, pearl barley, carrots, parsnips and leeks in vegetable stock.',
-    fibre:'White beans and barley, with a generous mix of root vegetables.',
-    freezerPlan:'Portion the stew into containers; test the barley texture and how much stock to add on reheating.'
+    "id": "chickpea-sweet-potato-peanut-stew",
+    "title": "Chickpea, sweet potato and peanut stew",
+    "kind": "Vegetarian",
+    "concept": "A rich peanut and tomato stew with chickpeas, sweet potato and spinach, finished with lime. Contains peanuts.",
+    "fibre": "Chickpeas, sweet potato, spinach and peanuts; brown rice could be added at serving.",
+    "freezerPlan": "Freeze the stew as the main component and prepare any rice separately; test sauce thickness after reheating.",
+    "number": 4
   },
   {
-    id:'chickpea-sweet-potato-peanut-stew',title:'Chickpea, sweet potato and peanut stew',kind:'Vegetarian',
-    concept:'A rich peanut and tomato stew with chickpeas, sweet potato and spinach, finished with lime. Contains peanuts.',
-    fibre:'Chickpeas, sweet potato, spinach and peanuts; brown rice could be added at serving.',
-    freezerPlan:'Freeze the stew as the main component and prepare any rice separately; test sauce thickness after reheating.'
+    "id": "chicken-black-bean-enchiladas",
+    "title": "Chicken and black bean enchiladas",
+    "kind": "Chicken",
+    "concept": "Wholemeal tortillas filled generously with black beans, shredded chicken and peppers, baked in a mild tomato sauce.",
+    "fibre": "Black beans, wholemeal tortillas and peppers, with beans making up a substantial part of the filling.",
+    "freezerPlan": "Try small trays of assembled enchiladas; test the sauce quantity so the tortillas keep their texture.",
+    "number": 5
   },
   {
-    id:'chicken-black-bean-enchiladas',title:'Chicken and black bean enchiladas',kind:'Chicken',
-    concept:'Wholemeal tortillas filled generously with black beans, shredded chicken and peppers, baked in a mild tomato sauce.',
-    fibre:'Black beans, wholemeal tortillas and peppers, with beans making up a substantial part of the filling.',
-    freezerPlan:'Try small trays of assembled enchiladas; test the sauce quantity so the tortillas keep their texture.'
+    "id": "moroccan-chicken-chickpea-stew",
+    "title": "Moroccan-style chicken and chickpea stew",
+    "kind": "Chicken",
+    "concept": "Chicken thighs and plenty of chickpeas with carrots, tomatoes, cumin, paprika and a little dried apricot.",
+    "fibre": "Chickpeas, carrots and apricots; serve with wholewheat couscous for another fibre source.",
+    "freezerPlan": "Freeze the stew in portions and make the couscous when serving; develop the spice balance and chickpea-to-chicken ratio.",
+    "number": 6
   },
   {
-    id:'moroccan-chicken-chickpea-stew',title:'Moroccan-style chicken and chickpea stew',kind:'Chicken',
-    concept:'Chicken thighs and plenty of chickpeas with carrots, tomatoes, cumin, paprika and a little dried apricot.',
-    fibre:'Chickpeas, carrots and apricots; serve with wholewheat couscous for another fibre source.',
-    freezerPlan:'Freeze the stew in portions and make the couscous when serving; develop the spice balance and chickpea-to-chicken ratio.'
+    "id": "turkey-lentil-meatballs",
+    "title": "Turkey and lentil meatballs in tomato sauce",
+    "kind": "Turkey",
+    "concept": "Turkey meatballs bulked out with cooked lentils and oats, in a vegetable-rich tomato sauce with wholewheat pasta.",
+    "fibre": "Lentils and oats in the meatballs, vegetables in the sauce and wholewheat pasta to serve.",
+    "freezerPlan": "Develop a mixture that holds together, then test freezing cooked meatballs in sauce; cook the pasta separately.",
+    "number": 8
   },
   {
-    id:'lemon-chicken-butter-bean-stew',title:'Lemon chicken, butter bean and leek stew',kind:'Chicken',
-    concept:'A variation on the Greek lemon chicken idea, using butter beans, leeks, carrots, oregano and stock.',
-    fibre:'Butter beans, leeks and carrots, with optional wholegrain bread alongside.',
-    freezerPlan:'Try freezing the stew without its final lemon finish; test the bean texture and add fresh lemon to taste when serving.'
-  },
-  {
-    id:'turkey-lentil-meatballs',title:'Turkey and lentil meatballs in tomato sauce',kind:'Turkey',
-    concept:'Turkey meatballs bulked out with cooked lentils and oats, in a vegetable-rich tomato sauce with wholewheat pasta.',
-    fibre:'Lentils and oats in the meatballs, vegetables in the sauce and wholewheat pasta to serve.',
-    freezerPlan:'Develop a mixture that holds together, then test freezing cooked meatballs in sauce; cook the pasta separately.'
-  },
-  {
-    id:'chicken-cacciatore-cannellini',title:'Chicken cacciatore with cannellini beans',kind:'Chicken',
-    concept:'The Italian-style chicken idea with added cannellini beans, peppers, mushrooms, tomatoes, garlic and herbs.',
-    fibre:'Cannellini beans and plenty of vegetables; pair with wholewheat pasta if wanted.',
-    freezerPlan:'Test freezing the chicken, beans and sauce together in portions, with the accompaniment made when serving.'
-  },
-  {
-    id:'broccoli-white-bean-macaroni',title:'Broccoli, pea and white bean macaroni cheese',kind:'Vegetarian',
-    concept:'Wholewheat macaroni with broccoli, peas and white beans in a Cheddar and mustard sauce. Some beans could be blended into the sauce.',
-    fibre:'Wholewheat pasta, white beans, broccoli and peas.',
-    freezerPlan:'Test small baked portions for pasta texture and sauce consistency before settling on a freezer method.'
+    "id": "chicken-cacciatore-cannellini",
+    "title": "Chicken cacciatore with cannellini beans",
+    "kind": "Chicken",
+    "concept": "The Italian-style chicken idea with added cannellini beans, peppers, mushrooms, tomatoes, garlic and herbs.",
+    "fibre": "Cannellini beans and plenty of vegetables; pair with wholewheat pasta if wanted.",
+    "freezerPlan": "Test freezing the chicken, beans and sauce together in portions, with the accompaniment made when serving.",
+    "number": 9
   }
 ];
 </script>
 <script>
 const htmlSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const prettyNumber=n=>{if(n==null)return '';const rounded=Math.round(n*100)/100;const whole=Math.floor(rounded);const frac=Math.round((rounded-whole)*100)/100;const m={0:'',0.25:'¼',0.5:'½',0.75:'¾',0.33:'⅓',0.67:'⅔'};return m[frac]!==undefined?`${whole||''}${m[frac]}`||'0':Number(rounded.toFixed(2)).toString()};
-const singular={"brown onions":"brown onion","carrots":"carrot","celery sticks":"celery stick","garlic cloves":"garlic clove","eggs":"egg","bell peppers":"bell pepper","large flour tortillas":"large flour tortilla","sweet potatoes":"sweet potato","floury potatoes":"floury potato","chicken breasts (about 4 large)":"chicken breast (about 4 large)","320 g ready-rolled puff pastry sheets":"320 g ready-rolled puff pastry sheet","400 g tins black beans":"400 g tin black beans"};
+const singular={"lemons":"lemon","brown onions":"brown onion","carrots":"carrot","celery sticks":"celery stick","garlic cloves":"garlic clove","eggs":"egg","bell peppers":"bell pepper","large flour tortillas":"large flour tortilla","sweet potatoes":"sweet potato","floury potatoes":"floury potato","chicken breasts (about 4 large)":"chicken breast (about 4 large)","320 g ready-rolled puff pastry sheets":"320 g ready-rolled puff pastry sheet","400 g tins black beans":"400 g tin black beans"};
 function amount(i,scale=1){if(i.qty==null)return i.name;const q=Math.round(i.qty*scale*100)/100;const label=q===1&&singular[i.name]?singular[i.name]:i.name;return `${prettyNumber(q)}${i.unit==='×'?' ×':i.unit?' '+i.unit:''} ${label}`;}
 const state={search:'',filter:'All',scale:1,scales:{},mode:{},selected:new Set(['burritos','chicken-casserole','chicken-pot-pie']),done:new Set(),ingredientDone:new Set()};
 try {const saved=JSON.parse(localStorage.getItem('freezer-table-v1')||'{}'); if(Array.isArray(saved.selected))state.selected=new Set(saved.selected);if(Array.isArray(saved.done))state.done=new Set(saved.done);if(Array.isArray(saved.ingredientDone))state.ingredientDone=new Set(saved.ingredientDone);if(saved.scales&&typeof saved.scales==='object')state.scales=saved.scales}catch(e){}
@@ -176,6 +750,8 @@ const save=()=>{try{localStorage.setItem('freezer-table-v1',JSON.stringify({sele
 const rById=id=>recipes.find(x=>x.id===id);
 const app=document.getElementById('app');
 function art(id){
+  const photoRecipe=rById(id);
+  if(photoRecipe?.photo)return `<div class="recipe-photo"><img src="${htmlSafe(photoRecipe.photo)}" alt="AI-generated example of ${htmlSafe(photoRecipe.title)}" width="960" height="640" loading="lazy" decoding="async"><span class="photo-caption">AI-generated example</span></div>`;
   const r=rById(id)||recipes[0];const base=`<ellipse cx="176" cy="135" rx="123" ry="82" fill="#18251b" opacity=".12"/><ellipse cx="160" cy="116" rx="122" ry="88" fill="#fffdf7"/><ellipse cx="160" cy="116" rx="108" ry="75" fill="#e5e4d9"/><ellipse cx="160" cy="116" rx="98" ry="66" fill="#f4efe2"/>`;
   let food='';
   if(id==='shepherds-pie')food=`<rect x="87" y="61" width="154" height="104" rx="14" fill="#81624b"/><rect x="94" y="66" width="140" height="94" rx="9" fill="#d2ab67"/><path d="M102 91 Q122 69 143 91 T185 91 T224 91 M101 116 Q125 93 146 116 T189 116 T225 116 M101 140 Q124 119 146 140 T191 140 T226 140" stroke="#efd391" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M108 90 l18 -7 m55 6 l17 -9 m-71 46 l17 -8 m57 21 l12 -8" stroke="#a67a42" stroke-width="3" opacity=".8"/>`;
@@ -188,11 +764,11 @@ function art(id){
 }
 function renderIdeas(){
   app.innerHTML=`<div class="page-intro"><div class="idea-intro"><span class="eyebrow">The next batch</span><h1>Ideas for a fuller freezer.</h1><p>${recipeIdeas.length} possible new dishes, chosen with fibre in mind. Beans, lentils, vegetables and wholegrains take centre stage. No beef, pork or Indian dishes.</p><div class="note"><strong>Speculative ideas · not yet developed</strong><p>These are starting points for future recipes. Quantities, cooking times and freezer methods still need developing and testing. Fibre per portion has not been calculated, and these ideas are not included in the shopping list.</p></div></div><a href="#home" class="btn">Browse complete recipes ↗</a></div>
-  <ol class="idea-grid" aria-label="Ten speculative recipe ideas">${recipeIdeas.map((idea,index)=>`<li class="panel idea-card" id="idea-${idea.id}"><div class="idea-art"><img src="images/ideas/${idea.id}.webp" alt="AI-generated food image of ${htmlSafe(idea.title)}" width="960" height="640" loading="lazy" decoding="async"><span class="photo-caption">AI-generated example</span></div><div class="idea-content"><div class="idea-topline"><span class="idea-number" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><span class="pill idea-status">Speculative idea</span></div><span class="idea-kind">${htmlSafe(idea.kind)}</span><h2>${htmlSafe(idea.title)}</h2><p>${htmlSafe(idea.concept)}</p><dl class="idea-details"><dt>Fibre sources</dt><dd>${htmlSafe(idea.fibre)}</dd><dt>Freezer approach to test</dt><dd>${htmlSafe(idea.freezerPlan)}</dd></dl></div></li>`).join('')}</ol>
+  <ol class="idea-grid" aria-label="${recipeIdeas.length} speculative recipe ideas">${recipeIdeas.map((idea,index)=>`<li class="panel idea-card" id="idea-${idea.id}"><div class="idea-art"><img src="images/ideas/${idea.id}.webp" alt="AI-generated food image of ${htmlSafe(idea.title)}" width="960" height="640" loading="lazy" decoding="async"><span class="photo-caption">AI-generated example</span></div><div class="idea-content"><div class="idea-topline"><span class="idea-number" aria-hidden="true">${String(idea.number).padStart(2,'0')}</span><span class="pill idea-status">Speculative idea</span></div><span class="idea-kind">${htmlSafe(idea.kind)}</span><h2>${htmlSafe(idea.title)}</h2><p>${htmlSafe(idea.concept)}</p><dl class="idea-details"><dt>Fibre sources</dt><dd>${htmlSafe(idea.fibre)}</dd><dt>Freezer approach to test</dt><dd>${htmlSafe(idea.freezerPlan)}</dd></dl></div></li>`).join('')}</ol>
   <p class="idea-source">The ingredient choices follow <a href="https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/" target="_blank" rel="noopener noreferrer">NHS guidance on adding fibre</a>: include pulses, vegetables and wholegrain foods. The ideas are not ranked by measured fibre content.</p>`;
 }
 function linkItems(){const h=location.hash||'#home';document.getElementById('main-nav').innerHTML=[['#home','⌂','All recipes'],['#ideas','✧','Recipe ideas'],['#shopping','▤','Shopping list'],['#guide','✳','Freezer guide']].map(([url,icon,label])=>`<a class="nav-link ${h===url?'is-active':''}" href="${url}"><span class="nav-icon">${icon}</span>${label}</a>`).join('');document.getElementById('recipe-nav').innerHTML=recipes.map(r=>`<a class="nav-link ${h==='#recipe/'+r.id?'is-active':''}" href="#recipe/${r.id}"><span class="nav-icon">${r.icon}</span>${htmlSafe(r.title)}</a>`).join('');}
-function renderHome(){const terms=state.search.toLowerCase().trim();const shown=recipes.filter(r=>(state.filter==='All'||r.category===state.filter)&&(`${r.title} ${r.short} ${r.tag} ${r.category}`.toLowerCase().includes(terms)));app.innerHTML=`<section class="hero"><div class="hero-copy"><span class="eyebrow" style="color:#e8cba4">The home cookbook</span><h1>Good food.<br><em>Ready when you are.</em></h1><p>A small, thoughtful collection of freezer-friendly favourites. Cook generously today and make tomorrow easier.</p><a class="btn btn-outline-dark" href="#shopping">Plan the next batch &nbsp;↗</a><div class="hero-stats"><div class="hero-stat"><strong>06</strong><span>Curated recipes</span></div><div class="hero-stat"><strong>52</strong><span>Individual portions*</span></div><div class="hero-stat"><strong>01</strong><span>Organised kitchen</span></div></div></div><div class="hero-art">${art('chicken-pot-pie')}<div class="hero-caption">Made with care.</div></div></section><div class="section-heading"><div><span class="eyebrow">Explore the collection</span><h2>Recipes worth making twice.</h2><p>Choose a dish, adjust the quantities, then follow the fresh or freezer method.</p></div></div><div class="tool-row"><div class="filters">${['All','Oven-ready','Vegetarian','Freezer components'].map(f=>`<button type="button" class="filter ${state.filter===f?'active':''}" data-filter="${f}">${f}</button>`).join('')}</div><input class="search" id="recipe-search" type="search" placeholder="Search the recipes…" aria-label="Search recipes" value="${htmlSafe(state.search)}"></div><div class="recipe-grid" id="cards">${shown.map(card).join('')||'<div class="empty">No recipes match. Try another search or filter.</div>'}</div><section class="banner"><div><span class="eyebrow">Plan ahead</span><h3>One list. Fewer supermarket trips.</h3><p>Your shopping list starts with the burritos, casserole and chicken pot pies.</p></div><a href="#shopping" class="btn btn-dark">Open shopping list &nbsp;↗</a></section><section class="banner ideas-banner" aria-labelledby="ideas-teaser-title"><div><span class="eyebrow">Ideas for the next batch</span><h3 id="ideas-teaser-title">More beans. More possibilities.</h3><p>Explore ${recipeIdeas.length} fibre-focused ideas, clearly marked as speculative and ready to develop.</p></div><a href="#ideas" class="btn">Explore recipe ideas &nbsp;↗</a></section><div class="footnote">*The collection totals 52 listed portions, counting each burrito as one portion. Serving sizes vary.</div>`;}
+function renderHome(){const terms=state.search.toLowerCase().trim();const shown=recipes.filter(r=>(state.filter==='All'||r.category===state.filter)&&(`${r.title} ${r.short} ${r.tag} ${r.category}`.toLowerCase().includes(terms)));app.innerHTML=`<section class="hero"><div class="hero-copy"><span class="eyebrow" style="color:#e8cba4">The home cookbook</span><h1>Good food.<br><em>Ready when you are.</em></h1><p>A small, thoughtful collection of freezer-friendly favourites. Cook generously today and make tomorrow easier.</p><a class="btn btn-outline-dark" href="#shopping">Plan the next batch &nbsp;↗</a><div class="hero-stats"><div class="hero-stat"><strong>${String(recipes.length).padStart(2,'0')}</strong><span>Curated recipes</span></div><div class="hero-stat"><strong>${recipes.reduce((total,r)=>total+r.portions,0)}</strong><span>Individual portions*</span></div><div class="hero-stat"><strong>01</strong><span>Organised kitchen</span></div></div></div><div class="hero-art">${art('chicken-pot-pie')}<div class="hero-caption">Made with care.</div></div></section><div class="section-heading"><div><span class="eyebrow">Explore the collection</span><h2>Recipes worth making twice.</h2><p>Choose a dish, adjust the quantities, then follow the fresh or freezer method.</p></div></div><div class="tool-row"><div class="filters">${['All','Oven-ready','Vegetarian','One-pot','Freezer components'].map(f=>`<button type="button" class="filter ${state.filter===f?'active':''}" data-filter="${f}">${f}</button>`).join('')}</div><input class="search" id="recipe-search" type="search" placeholder="Search the recipes…" aria-label="Search recipes" value="${htmlSafe(state.search)}"></div><div class="recipe-grid" id="cards">${shown.map(card).join('')||'<div class="empty">No recipes match. Try another search or filter.</div>'}</div><section class="banner"><div><span class="eyebrow">Plan ahead</span><h3>One list. Fewer supermarket trips.</h3><p>Your shopping list starts with the burritos, casserole and chicken pot pies.</p></div><a href="#shopping" class="btn btn-dark">Open shopping list &nbsp;↗</a></section><section class="banner ideas-banner" aria-labelledby="ideas-teaser-title"><div><span class="eyebrow">Ideas for the next batch</span><h3 id="ideas-teaser-title">More beans. More possibilities.</h3><p>Explore ${recipeIdeas.length} fibre-focused ideas, clearly marked as speculative and ready to develop.</p></div><a href="#ideas" class="btn">Explore recipe ideas &nbsp;↗</a></section><div class="footnote">*The collection totals ${recipes.reduce((total,r)=>total+r.portions,0)} listed portions, counting each burrito as one portion. Serving sizes vary.</div>`;}
 function card(r){return `<a class="recipe-card" href="#recipe/${r.id}"><div class="card-illustration">${art(r.id)}</div><div class="card-body"><div class="card-topline"><span>${htmlSafe(r.tag)}</span><span class="pill">${r.portions} ${r.portionUnit}</span></div><h3>${htmlSafe(r.title)}</h3><p>${htmlSafe(r.short)}</p><div class="card-foot"><span>◷ &nbsp;${r.prep} prep</span><span>View recipe <i>↗</i></span></div></div></a>`;}
 function renderRecipe(r){let m=state.mode[r.id]||r.modes[0].id;if(!r.modes.some(x=>x.id===m))m=r.modes[0].id;const mode=r.modes.find(x=>x.id===m);app.innerHTML=`<a class="backlink" href="#home">← &nbsp; Back to all recipes</a><div class="recipe-hero"><div class="recipe-title"><span class="eyebrow">${htmlSafe(r.tag)} · ${htmlSafe(r.category)}</span><h1>${htmlSafe(r.title)}</h1><p>${htmlSafe(r.short)}</p><div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:26px"><button class="btn btn-dark" data-add-shop="${r.id}">${state.selected.has(r.id)?'✓ Included in shopping list':'+ Add to shopping list'}</button><button class="btn" onclick="window.print()">⎙ Print recipe</button></div></div><div class="detail-art">${art(r.id)}</div></div><div class="meta-strip"><div class="meta-item">◷ <strong>${r.prep}</strong> preparation</div><div class="meta-item">♨ <strong>${r.cook}</strong> typical cooking</div><div class="meta-item">♧ <strong>${r.portions}</strong> ${r.portionUnit}</div><div class="meta-item">❄ <strong>Freezer-friendly</strong></div></div><div class="detail-layout"><section class="panel"><span class="eyebrow">Everything you need</span><h2>Ingredients</h2><p class="panel-sub">Tick things off as you prepare them. Quantities scale automatically.</p><div class="scale-row" aria-label="Scale ingredient quantities">${[.5,1,2].map(x=>`<button class="scale-btn ${state.scale===x?'active':''}" data-scale="${x}">${x===.5?'½':x===1?'1':'2'}× <span style="font-weight:400">(${r.portions*x})</span></button>`).join('')}</div>${r.ingredients.map((group,gi)=>`<div class="ingredient-heading">${htmlSafe(group.heading)}</div><div class="ingredient-list">${group.items.map((i,ii)=>{const key=r.id+'|'+gi+'|'+ii;return `<label class="ingredient"><input type="checkbox" data-ingredient="${key}" ${state.ingredientDone.has(key)?'checked':''}><span>${htmlSafe(amount(i,state.scale))}${i.optional?' <small>· optional</small>':''}</span></label>`}).join('')}</div>`).join('')}</section><section class="panel"><span class="eyebrow">From prep to plate</span><h2>How to make it</h2><p class="panel-sub">Follow these steps to prepare and assemble the dish.</p>${state.scale!==1?`<div class="method-info">Ingredients are scaled to ${r.portions*state.scale} ${r.portionUnit}. The instructions below describe the original ${r.portions}-${r.portionUnit==='burritos'?'burrito':r.portionUnit==='cutlets'?'cutlet':'portion'} batch; adjust quantities, tray numbers and cooking batches accordingly.</div>`:''}<div>${r.steps.map((s,i)=>stepHTML(s,i+1)).join('')}</div><div style="height:1px;background:var(--line);margin:22px 0 25px"></div><span class="eyebrow">Bake & serve</span><h2>Cooking instructions</h2><div class="tab-row" role="tablist" aria-label="Cooking state">${r.modes.map(x=>`<button class="tab ${x.id===m?'active':''}" role="tab" aria-selected="${x.id===m}" data-mode="${x.id}" data-recipe="${r.id}">${x.label}</button>`).join('')}</div><div class="method-info"><strong>${htmlSafe(mode.temperature)}</strong> &nbsp;·&nbsp; ${htmlSafe(mode.time)} <br><span style="font-size:11px">These are estimates: judge by internal temperature and doneness, not the clock alone.</span></div>${mode.steps.map((s,i)=>stepHTML(s,i+1)).join('')}</section></div><div class="detail-footer"><div class="panel"><span class="eyebrow">Put some away</span><h3>Freezer instructions</h3><p>${htmlSafe(r.freezer)}</p></div><div class="panel"><span class="eyebrow">Cook's note</span><h3>Little things that help</h3><p>${htmlSafe(r.tips)}</p></div></div><div class="note"><strong>Food safety</strong><p>Cool cooked ingredients promptly, keep raw chicken refrigerated during preparation, and reheat cooked dishes until steaming hot throughout. A probe thermometer is the most reliable way to check the centre reaches 75°C.</p></div>`;}
 function stepHTML(s,n){return `<div class="method-step"><span class="step-number">${n}</span><div><h4>${htmlSafe(s.title)}</h4><p>${htmlSafe(s.text)}</p></div></div>`;}

@@ -4,36 +4,38 @@ A small, self-contained recipe website, based on the batch-cooking dishes develo
 
 ## What's included
 
-Six complete recipes:
+Nine complete recipes:
 - Lamb shepherd's pie
 - Spinach and ricotta lasagne
 - Chicken Parmesan cutlets with tomato pasta sauce
 - Sweet potato and black bean burritos
 - Chicken, broccoli and rice casserole
 - Chicken pot pies
+- White bean, barley and root vegetable stew
+- Lemon chicken, butter bean and leek stew
+- Broccoli, pea and white bean macaroni cheese
+
+[Full written recipes for the three new additions](recipes/new-batch-recipes.md). Each serves eight. These written recipes have not been kitchen-tested.
 
 Features include searchable recipe cards, fresh/frozen/defrosted methods, ingredient scaling, ingredient tick-boxes, a selectable combined shopping list, printable views and a freezer reference guide. The default shopping list combines the burritos, casserole and pot pies.
 
 ### Speculative recipe ideas
 
-The **Recipe ideas** section (`#ideas`) contains ten concepts chosen around beans, lentils, vegetables and wholegrains:
+The **Recipe ideas** section (`#ideas`) contains seven remaining concepts. Their original idea numbers are preserved; ideas 3, 7 and 10 are now complete recipes in the main collection.
 
-1. Butter bean, squash and kale gratin
-2. Lentil, mushroom and aubergine moussaka
-3. White bean, barley and root vegetable stew
-4. Chickpea, sweet potato and peanut stew
-5. Chicken and black bean enchiladas
-6. Moroccan-style chicken and chickpea stew
-7. Lemon chicken, butter bean and leek stew
-8. Turkey and lentil meatballs in tomato sauce
-9. Chicken cacciatore with cannellini beans
-10. Broccoli, pea and white bean macaroni cheese
+- **1.** Butter bean, squash and kale gratin
+- **2.** Lentil, mushroom and aubergine moussaka
+- **4.** Chickpea, sweet potato and peanut stew
+- **5.** Chicken and black bean enchiladas
+- **6.** Moroccan-style chicken and chickpea stew
+- **8.** Turkey and lentil meatballs in tomato sauce
+- **9.** Chicken cacciatore with cannellini beans
 
 Each card has a photorealistic food image labelled **AI-generated example** and is labelled **Speculative idea**, with a short concept, fibre sources and a freezer approach to test. These images are visual concepts, not photographs of tested recipes. Quantities, cooking times and freezer methods remain to be developed. The ideas are excluded from ingredient scaling and shopping-list calculations. No fibre amounts or nutritional ranking are claimed. The ingredient focus follows [NHS fibre guidance](https://www.nhs.uk/live-well/eat-well/digestive-health/how-to-get-more-fibre-into-your-diet/).
 
 ## Open it
 
-Double-click `index.html` to open it in a modern browser. No server or build tools are required. The interface (HTML, CSS, JavaScript and the original recipe illustrations) is in `index.html`; the ten recipe-idea photos are optimised local WebP files in `images/ideas/`. Keep that folder alongside `index.html` when copying or deploying the site. Optional Google Fonts require an internet connection; fallback fonts work offline.
+Double-click `index.html` to open it in a modern browser. No server or build tools are required. The interface (HTML, CSS, JavaScript and the original recipe illustrations) is in `index.html`; the ten recipe photos (including the three promoted recipes) are optimised local WebP files in `images/ideas/`. Keep that folder alongside `index.html` when copying or deploying the site. Optional Google Fonts require an internet connection; fallback fonts work offline.
 
 The shopping list selection and ingredient tick-box states are stored in your browser, where permitted. They are not synced across devices.
 
